@@ -2,7 +2,7 @@ const canvas = document.getElementById("canvas1");
 const context = canvas.getContext('2d');
 
 const image = new Image(); 
-image.src = '../images/default.jpg'
+image.src = '../images/default.jpg';
 image.onload = function() {
     initialize();
 }
@@ -10,11 +10,13 @@ image.onload = function() {
 let inputFile = document.getElementById("inputFile");
 
 inputFile.onchange = function() {
-    image.src = URL.createObjectURL(inputFile.files[0]);
+    const newImage = new Image();
+    newImage.src = URL.createObjectURL(inputFile.files[0]);
 
-    image.onload = function() {
+    newImage.onload = function() {
+        image.src = newImage.src;
         initialize();
-   }
+    } 
 }
 
 const sliderX1 = document.getElementById("x1-slider");
