@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background:black;
+    color: white;
+} 
+
+.page-container {
+    display: flex;
+    padding-bottom: 30px;
+} 
+
+#canvas1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    height: auto;
+} 
+
+.picture {
+    margin: auto;
+    width: 50%;
+}
+
+.controls {
+    padding: 10% 0;
+    width: 50%;
+}
+
+.controls > input {
+    width: 60%;
+} 
+
+#resolution {
+    width: 50px;
+}
+
+.controls > label {
+    color: white;
+}
+
+header {
+    font-size: 25px;
+    margin: 20px 0 20px 35px;
+}
+
+#inputLabel {
+    display:block;
+    width: 150px;
+    background: rgb(124, 127, 133);
+    color: white;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+} 
+
+#inputFile {
+    display: none;
+} 
+
+p {
+    font-size: 20px;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Art</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Emujin's Image to ASCII Text Converter</header>
+    <div class="page-container">
+        <div class="picture">
+            <input type="file" accept="image/*" id="inputFile">
+            <label for="inputFile" id="inputLabel">Add Image</label>
+            <canvas id="canvas1"></canvas>   
+        </div>
+        <div class="controls">
+            <label for="resolution" id="resolutionLabel">Font size: </label>
+            <input type="number" id="resolution" name="resolution" value="10"> 
+            <p>X-Axis</p>
+                <label for="x1-slider" id="x1-sliderLabel">Slider: 0</label>
+                <input type ="range" id="x1-slider" name="x1-slider" min="0" max="100" value="0">
+            <p>Y-Axis</p>
+                <label for="y1-slider" id="y1-sliderLabel">Slider: 0</label>
+                <input type ="range" id="y1-slider" name="y1-slider" min="0" max="100" value="0">
+        </div>
+    <script src="/script/script.js"></script>
+</body>
+</html>
+
+<!--TO DO: 
+    add functionality for font size 
+    add a pop-up box with info about the page -->
+    
