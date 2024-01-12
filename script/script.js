@@ -1,8 +1,8 @@
 const canvas = document.getElementById("canvas1"); 
 const context = canvas.getContext('2d');
 
-const image = new Image(); 
-image.src = '../images/default.jpg';
+const image = new Image();
+image.src = "../images/default.jpg";
 image.onload = function() {
     initialize();
 }
