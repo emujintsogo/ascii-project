@@ -13,25 +13,17 @@
     <header>Emujin's Image to ASCII Text Converter</header>
     <div class="page-container">
         <div class="picture">
-            <input type="file" accept="image/*" id="inputFile">
+            <input type="file" accept="image/jpeg, image/jpg, image/png" id="inputFile">
             <label for="inputFile" id="inputLabel">Add Image</label>
             <canvas id="canvas1"></canvas>   
         </div>
         <div class="controls">
-            <label for="resolution" id="resolutionLabel">Font size: </label>
-            <input type="number" id="resolution" name="resolution" value="10"> 
-            <p>X-Axis</p>
-                <label for="x1-slider" id="x1-sliderLabel">Slider: 0</label>
-                <input type ="range" id="x1-slider" name="x1-slider" min="0" max="100" value="0">
-            <p>Y-Axis</p>
+                <input type="number" id="fontSize" name="fontSize" value="10" min="5" max="30"> 
+                <label for="fontSize" id="fontLabel">Font size: </label>
+            <p>Rows</p>
                 <label for="y1-slider" id="y1-sliderLabel">Slider: 0</label>
-                <input type ="range" id="y1-slider" name="y1-slider" min="0" max="100" value="0">
+                <input type ="range" id="y1-slider" name="y1-slider" min="0" value="0">
         </div>
-    <script src="/script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
-
-<!--TO DO: 
-    add functionality for font size 
-    add a pop-up box with info about the page -->
-    
